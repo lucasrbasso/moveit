@@ -11,9 +11,9 @@ E após isso alongar, caminhar ou fazer exercícios para melhorar a saúde.
 ## Tecnologias e como abrir
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
- [NextJS](https://nextjs.org)
- [Typescript](https://www.typescriptlang.org)
- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+ - [NextJS](https://nextjs.org)
+ - [Typescript](https://www.typescriptlang.org)
+ - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 **Para funcionar**:
 
