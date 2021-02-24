@@ -9,7 +9,7 @@ export function ChallengeBox() {
         <div className={styles.challengeBoxContainer}>
             {activeChallenge ? (
                 <div className={styles.challengeActive}>
-                    <header>Ganhe {activeChallenge.amount} xp</header>
+                    <header>Ganhe {activeChallenge.amount} XP</header>
 
                     <main>
                         <img
