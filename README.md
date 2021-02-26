@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ```console
 console@bar:/GitHub/moveit:~$ yarn
-console@bar:/GitHub/happy:~$ yarn dev
+console@bar:/GitHub/moveit:~$ yarn dev
 ```
 
 Abra http://localhost:3000 no seu navegador para ver o resultado.
