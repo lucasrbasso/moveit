@@ -1,0 +1,78 @@
+.overlay{
+
+    background: var(--blue) url('/background.svg') no-repeat 0%;
+    background-size: 45%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container {
+    padding: 20rem 40rem 20rem 20rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo{
+    padding-bottom: 10rem;
+    width: 100%
+}
+
+.container strong {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--white);
+    padding-bottom: 2rem;
+}
+
+.container p {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    color: #B2B9FF;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.container p img {
+    padding-right: 1.5rem;
+}
+
+.container form {
+    display: flex;
+    width: 120%;
+}
+
+.container form input {
+    flex: 1;
+    height: 5rem;
+    padding: 0 2rem;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    color: #B2B9FF;
+    background: rgb(73,83,184);
+    background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+}
+
+.container form input::placeholder {
+    color: #B2B9FF;
+}
+
+.container form button {
+    height: 5rem;
+    width: 5rem;
+    background: var(--blue-dark);
+    border-radius: 0px 5px 5px 0px;
+    border: 0;
+    color: #fff;
+    transition: background-color 0.2s;
+}
