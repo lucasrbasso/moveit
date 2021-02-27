@@ -20,10 +20,22 @@
 }
 
 .profileContainer div p{
+    display: flex;
+    align-items: center;
     font-size: 1rem;
     margin-top: 0.5rem;
+    justify-content: space-between;
 }
 
 .profileContainer div p img{
     margin-right: 0.5rem;
+}
+
+.profileContainer div p button{
+    padding: 0.5rem;
+    border: none;
+    color: red;
+    margin-left: 1rem;
+    background-color: var(--background);
+    height: 100%;
 }

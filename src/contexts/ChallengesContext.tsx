@@ -25,6 +25,7 @@ interface ChallengesContextData {
     closeLevelUpModal: () => void;
     inputName: (event) => void;
     closeLoginScreen: () => void;
+    openLoginScreen: () => void;
 }
 
 interface ChallengesProviderProps {
@@ -62,6 +63,11 @@ export function ChallengesProvider({
 
     function closeLoginScreen() {
         setIsLoginScreenOpen(false);
+    }
+
+    function openLoginScreen() {
+        setIsLoginScreenOpen(true);
+        Cookies.set('name', '');
     }
 
     useEffect(() => {
@@ -146,6 +152,7 @@ export function ChallengesProvider({
                 closeLevelUpModal,
                 inputName,
                 closeLoginScreen,
+                openLoginScreen,
             }}
         >
             {children}

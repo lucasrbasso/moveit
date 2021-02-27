@@ -5,6 +5,18 @@
     outline: none;
 }
 
+@media (min-width: 728px) and (max-width: 1180px) {
+    * {
+        box-sizing : initial;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 728px) {
+    * {
+        box-sizing : initial;
+    }
+}
+
 :root {
     --white: #fff;
     --background: #F2F3F5;
@@ -19,15 +31,27 @@
     --blue-twitter: #2AA9E0;
 }
 
-@media(max-width: 1080px){
+@media(min-width: 1920px){
     html {
-        font-size: 93.75%;
+        font-size: 100.75%;
+    }
+}
+
+@media(max-width: 1180px){
+    html {
+        font-size: 75.75%;
     }
 }
 
 @media(max-width: 728px){
     html {
-        font-size: 87.5%;
+        font-size: 86.5%;
+    }
+}
+
+@media(max-width: 400px){
+    html {
+        font-size: 60.5%;
     }
 }
 

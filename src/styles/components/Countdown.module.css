@@ -93,3 +93,9 @@
     border-bottom: 0.4rem solid var(--green);
     cursor: not-allowed;
 }
+
+@media (max-width: 1080px) {
+    .countdownButton {
+        margin-bottom: 2rem;
+    }
+}
