@@ -31,7 +31,16 @@ export default function LoginScreen() {
                         type="text"
                         onChange={e => inputName(e)}
                     />
-                    <button type="submit" onClick={submit}>
+                    <button
+                        className={
+                            name === ''
+                                ? styles.buttonDisabled
+                                : styles.buttonWorking
+                        }
+                        type="submit"
+                        disabled={name === ''}
+                        onClick={submit}
+                    >
                         <img src="icons/arrow-composed.svg" alt="Arrow" />
                     </button>
                 </form>

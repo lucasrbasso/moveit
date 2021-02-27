@@ -1,27 +1,25 @@
-.overlay{
-
+.overlay {
     background: var(--blue) url('/background.svg') no-repeat 0%;
+    display: flex;
     background-size: 45%;
     position: fixed;
+    align-items: center;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    transition: 0.6s;
 }
 
 .container {
-    padding: 20rem 40rem 20rem 20rem;
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
+ 
+} 
 
 .logo{
-    padding-bottom: 10rem;
+    display: flex;
+    padding-bottom: 5rem;
     width: 100%
 }
 
@@ -44,6 +42,7 @@
 }
 
 .container p img {
+    display: flex;
     padding-right: 1.5rem;
 }
 
@@ -53,6 +52,7 @@
 }
 
 .container form input {
+    display: flex;
     flex: 1;
     height: 5rem;
     padding: 0 2rem;
@@ -67,7 +67,10 @@
     color: #B2B9FF;
 }
 
-.container form button {
+.buttonDisabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 5rem;
     width: 5rem;
     background: var(--blue-dark);
@@ -75,4 +78,51 @@
     border: 0;
     color: #fff;
     transition: background-color 0.2s;
+}
+
+.buttonWorking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    background: var(--green);
+    border-radius: 0px 5px 5px 0px;
+    border: 0;
+}
+
+@media (min-width: 1280px) {
+    .overlay{
+        justify-content: flex-end;
+    }
+
+    .container {
+        margin-right: 10rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (min-width: 728px) and (max-width: 1280px) {
+    .overlay{    
+        justify-content: flex-end;
+    }
+
+    .container {
+        margin-right: 10rem;
+        padding-top: 6rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 728px) {
+    .overlay{    
+        justify-content: center;
+        padding: 0 5rem;
+    }
+
+    .container form input {
+        max-width: 15rem;
+        padding: 0 2rem;
+    }
 }
