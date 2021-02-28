@@ -8,7 +8,7 @@
 exemplo parecido com Pomodoro onde o usuário deve focar nos estudos ou qualquer outra atividade por 25 minutos. 
 E após isso alongar, caminhar ou fazer exercícios para melhorar a saúde.
 
-Teste o aplicativo [aqui](https://moveit-nlw-psi.vercel.app/).
+Teste o aplicativo e seus funcionalidades **[aqui](https://moveit-nlw-psi.vercel.app/)**.
 
 ## Tecnologias e como abrir
 
