@@ -1,7 +1,7 @@
 ## MoveIt
 
 <p align="center">
-  <img alt="moveit" src="/moveITlogin.png" width="300%">
+  <img alt="moveit" src="/moveITlogin.png" width="100%">
 </p>
 
 **MoveIT** é uma ferramenta de gerenciamento de estilo de vida, introduzido pela [Rocketseat](https://rocketseat.com.br), nela é possível notar um 
