@@ -14,8 +14,8 @@
 .container {
     display: flex;
     flex-direction: column;
- 
-} 
+
+}
 
 .logo{
     display: flex;
@@ -97,14 +97,14 @@
     }
 
     .container {
-        margin-right: 10rem;
+        margin-right: 15rem;
         padding-top: 10rem;
         padding-bottom: 5rem;
     }
 }
 
 @media (min-width: 728px) and (max-width: 1280px) {
-    .overlay{    
+    .overlay{
         justify-content: flex-end;
     }
 
@@ -116,7 +116,7 @@
 }
 
 @media (min-width: 100px) and (max-width: 728px) {
-    .overlay{    
+    .overlay{
         justify-content: center;
         padding: 0 5rem;
     }
