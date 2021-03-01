@@ -1,12 +1,14 @@
 ## MoveIt
 
 <p align="center">
-  <img alt="moveit" src="/moveitsafari.png" width="100%">
+  <img alt="moveit" src="/moveITlogin.png" width="100%">
 </p>
 
 **MoveIT** é uma ferramenta de gerenciamento de estilo de vida, introduzido pela [Rocketseat](https://rocketseat.com.br), nela é possível notar um 
 exemplo parecido com Pomodoro onde o usuário deve focar nos estudos ou qualquer outra atividade por 25 minutos. 
 E após isso alongar, caminhar ou fazer exercícios para melhorar a saúde.
+
+Teste o aplicativo e seus funcionalidades **[aqui](https://moveit-nlw-psi.vercel.app/)**.
 
 ## Tecnologias e como abrir
 
