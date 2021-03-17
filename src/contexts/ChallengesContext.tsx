@@ -5,6 +5,9 @@ import challenges from '../../challenges.json';
 import { LevelUpModal } from '../components/LevelUpModal';
 import LoginScreen from '../pages/LoginScreen';
 
+declare const self: any;
+declare const clients: any;
+
 interface Challenge {
     type: 'body' | 'eye';
     description: string;
@@ -106,11 +109,24 @@ export function ChallengesProvider({
 
         setActiveChallenge(challenge);
 
-        if (Notification.permission === 'granted') {
-            new Notification('Novo desafio 😎', {
-                body: `Valendo ${challenge.amount} xp!`,
-            });
-        }
+        Notification.requestPermission(function (result) {
+            if (result === 'granted') {
+                navigator.serviceWorker.ready.then(function (registration) {
+                    registration.showNotification('MoveIt 😎', {
+                        actions: [
+                            {
+                                action: 'fechar',
+                                title: 'Fechar',
+                            },
+                        ],
+                        body: `Novo desafio Valendo ${challenge.amount} xp!`,
+                        icon: 'favicon.png',
+                        vibrate: [300, 100, 400],
+                        tag: 'notification-sample',
+                    });
+                });
+            }
+        });
     }
 
     function resetChallenge() {
