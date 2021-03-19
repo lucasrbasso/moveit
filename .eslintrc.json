@@ -24,6 +24,8 @@
         "prettier"
     ],
     "rules": {
+        "no-plusplus":"off",
+        "no-restricted-globals":"off",
         "react/destructuring-assignment": "off",
         "react-hooks/exhaustive-deps":"off",
         "prettier/prettier": "error",

@@ -1,12 +1,8 @@
-/* eslint-disable no-new */
 import React, { useState, createContext, ReactNode, useEffect } from 'react';
 import Cookies from 'js-cookie';
 import challenges from '../../challenges.json';
 import { LevelUpModal } from '../components/LevelUpModal';
 import LoginScreen from '../pages/LoginScreen';
-
-declare const self: any;
-declare const clients: any;
 
 interface Challenge {
     type: 'body' | 'eye';
@@ -113,16 +109,9 @@ export function ChallengesProvider({
             if (result === 'granted') {
                 navigator.serviceWorker.ready.then(function (registration) {
                     registration.showNotification('MoveIt 😎', {
-                        actions: [
-                            {
-                                action: 'fechar',
-                                title: 'Fechar',
-                            },
-                        ],
                         body: `Novo desafio Valendo ${challenge.amount} xp!`,
                         icon: 'favicon.png',
                         vibrate: [300, 100, 400],
-                        tag: 'notification-sample',
                     });
                 });
             }
